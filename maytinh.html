@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body style="text-align: center">
+        <p>Máy tính đơn giản</p>
+        <div>
+            <input type="text" id="number1">
+            <input type="text" id="number2">
+        </div>
+        <button type="button" onclick="cong()">+</button>
+        <button type="button" onclick="tru()">-</button>
+        <button type="button" onclick="nhan()">x</button>
+        <button type="button" onclick="chia()">:</button>
+        <div id="ketqua"></div>
+
+    <script>
+
+        function tru(){
+            var a=document.getElementById("number1").value;
+            var b=document.getElementById("number2").value;
+            var ketqua;
+            ketqua=a-b;
+            document.getElementById("ketqua").innerHTML="kết quả phép trừ là: "+ketqua;
+        }
+        function cong(){
+            var a=parseInt(document.getElementById("number1").value);
+            var b=parseInt(document.getElementById("number2").value);
+            var ketqua;
+            ketqua=a+b;
+            document.getElementById("ketqua").innerHTML="kết quả phép cộng là: "+ketqua;
+        }
+        function nhan(){
+            var a=document.getElementById("number1").value;
+            var b=document.getElementById("number2").value;
+            var ketqua;
+            ketqua=a*b;
+            document.getElementById("ketqua").innerHTML="kết quả phép nhân là: "+ketqua;
+        }
+        function chia(){
+            var a=document.getElementById("number1").value;
+            var b=document.getElementById("number2").value;
+            var ketqua;
+            ketqua=a/b;
+            document.getElementById("ketqua").innerHTML="kết quả phép chia là: "+ketqua;
+        }
+    </script>
+
+</body>
+</html>

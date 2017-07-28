@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #content{
+            position: relative;
+        }
+        #no{
+            position:absolute;
+        }
+    </style>
+</head>
+<body style="text-align: center">
+    <div id="content">
+        <div><button type="button" onclick="love()">Yes</button></div><
+        <div><button type="button" onmouseover="No()" id="no">No</button></div>
+    </div>
+    <script>
+
+
+        function love(){
+            alert("bạn chọn đúng người rồi đấy ^^");
+        }
+        function No(){
+            var x=Math.random()*500;
+            var y=Math.random()*200;
+            document.getElementById('no').style.left=x+'px';
+            document.getElementById('no').style.top=y+'px';
+        }
+    </script>
+
+</body>
+</html>
